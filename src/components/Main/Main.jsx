@@ -14,19 +14,19 @@ const Main = () => {
     input,
   } = useContext(Context);
 
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.key === "Enter") {
-        onSent();
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyPress);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyPress);
-    };
-  }, []);
+    // useEffect(() => {
+    //   const handleKeyPress = (e) => {
+    //     if (e.key === "Enter") {
+    //       onSent();
+    //     }
+    //   };
+  
+    //   window.addEventListener("keydown", handleKeyPress);
+  
+    //   return () => {
+    //     window.removeEventListener("keydown", handleKeyPress);
+    //   };
+    // }, []);
 
   return (
     <div className="main">
